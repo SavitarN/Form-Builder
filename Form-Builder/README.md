@@ -1,8 +1,87 @@
-# React + Vite
+# Interactive Form Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive form builder built with React that allows users to create custom forms with drag-and-drop functionality. The project includes features like form component libraries, preview mode, form validation, and JSON schema generation.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
+- [Usage](#usage)
+- [Preview](#preview)
+- [To-Do](#to-do)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Features
+
+- **Drag-and-Drop**: Build forms by dragging and dropping components like text fields, select dropdowns, radio buttons, etc.
+- **Component Library**: Ready-to-use field components.
+- **Preview Mode**: Test forms before using them.
+- **Form Validation**: Validate forms with custom rules using libraries like Zod.
+- **JSON Schema Generation**: Automatically generate a JSON schema for created forms.
+- **Optimized Performance**: React.memo and useMemo are used for optimization.
+- **Persisted State**: Retains the form state during sessions using local storage.
+
+### Bonus Features (Planned):
+
+- Form templates
+- Form response visualization
+- Conditional logic in forms
+
+---
+
+## Tech Stack
+
+- **Frontend**: React
+- **Drag-and-Drop**: react-beautiful-dnd
+- **Styling**: CSS
+- **Validation**: Zod
+- **Testing**: Jest (optional, for unit tests)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed on your system
+- [Git](https://git-scm.com/) installed
+
+### Installation
+
+1. Clone the repository:
+   git clone https://github.com/SavitarN/Form-Builder.git
+
+2. Navigate to the project directory:
+   cd form-builder
+
+3. Install Dependencies:
+   npm install
+
+4. Start the development server:
+   npm run dev
+
+#Folder Structure:
+
+src/
+├── components/
+│ ├── FormBuilder/
+│ │ ├── FormBuilder.jsx
+│ │ ├── FieldLibrary.jsx
+│ │ ├── FieldRenderer.jsx
+│ └── Shared/
+│ ├── Button.jsx
+│ └── Input.jsx
+├── pages/
+│ └── FormBuilderPage.jsx
+├── styles/
+│ ├── global.css
+│ ├── formBuilder.css
+├── utils/
+│ └── reorder.js
+├── App.jsx
+└── main.jsx
