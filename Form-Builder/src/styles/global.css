@@ -1,0 +1,14 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.field-library {
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+}
+
+.form-builder {
+  display: flex;
+}
